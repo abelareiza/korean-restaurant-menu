@@ -17,8 +17,11 @@ En este proyecto se hizo uso de:
  
 #RetosPlatziCSS 💚
 
+## También puedes acceder escaneando este código QR:
+![enter image description here](https://github.com/abelareiza/korean-restaurant-menu/blob/main/custom/mockups/korean-menu-qr-code.png?raw=true)
+
 ## Preview:
-![enter image description here](https://github.com/abelareiza/korean-restaurant-menu/blob/main/custom/mokckup/Seoul%20Delights%20-%20Desktop.png?raw=true)
+![enter image description here](https://github.com/abelareiza/korean-restaurant-menu/blob/main/custom/mockups/Seoul%20Delights%20-%20Desktop.png?raw=true)
 
 
 ### Sígueme en:
