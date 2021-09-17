@@ -129,3 +129,52 @@ body {
     }
   }
 }
+
+@media (max-width: 800px) {
+  .menu {
+    grid-template-columns: 80px repeat(2, 1fr) 80px;
+
+    &__header {
+      grid-column: 2 / 4;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, auto);
+
+      &-logo {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin: 2rem 0;
+      }
+
+      &--english {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+
+      &--korean {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+    }
+
+    &__options {
+      grid-column: 2 / 4;
+      grid-row: 3 / 4;
+      grid-template-columns: subgrid;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    grid-template-columns: 80px 1fr 80px;
+
+    &__header {
+      grid-column: 2 / 3;
+    }
+
+    &__options {
+      grid-column: 2 / 3;
+      grid-template-columns: subgrid;
+    }
+  }
+}

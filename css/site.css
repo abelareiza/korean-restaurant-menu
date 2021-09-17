@@ -109,4 +109,45 @@ body {
   transition: 0.1s ease-out;
 }
 
+@media (max-width: 800px) {
+  .menu {
+    grid-template-columns: 80px repeat(2, 1fr) 80px;
+  }
+  .menu__header {
+    grid-column: 2/4;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .menu__header-logo {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 2rem 0;
+  }
+  .menu__header--english {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .menu__header--korean {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .menu__options {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    grid-template-columns: subgrid;
+  }
+}
+@media (max-width: 600px) {
+  .menu {
+    grid-template-columns: 80px 1fr 80px;
+  }
+  .menu__header {
+    grid-column: 2/3;
+  }
+  .menu__options {
+    grid-column: 2/3;
+    grid-template-columns: subgrid;
+  }
+}
+
 /*# sourceMappingURL=site.css.map */
