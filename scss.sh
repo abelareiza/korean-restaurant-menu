@@ -1,0 +1,1 @@
+sass --watch scss/site.scss:site.css
