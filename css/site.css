@@ -109,6 +109,34 @@ body {
   transition: 0.1s ease-out;
 }
 
+footer {
+  display: flex;
+  background-color: #121212;
+  color: white;
+  font-size: 1.2rem;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+}
+.footer__item a {
+  border-bottom: 2px solid transparent;
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.footer__item a:hover {
+  border-bottom: 2px solid white;
+}
+.footer__item a img {
+  height: 1.2rem;
+  vertical-align: middle;
+}
+
 @media (max-width: 800px) {
   .menu {
     grid-template-columns: 80px repeat(2, 1fr) 80px;
@@ -135,6 +163,16 @@ body {
     grid-column: 2/4;
     grid-row: 3/4;
     grid-template-columns: subgrid;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__item {
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 600px) {
